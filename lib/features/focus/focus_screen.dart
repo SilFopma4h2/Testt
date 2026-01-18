@@ -166,7 +166,7 @@ class _FocusScreenState extends State<FocusScreen> {
                 child: CircularProgressIndicator(
                   value: progress,
                   strokeWidth: 12,
-                  backgroundColor: AppTheme.accentColor.withOpacity(0.2),
+                  backgroundColor: AppTheme.accentColor.withValues(alpha: 0.2),
                   valueColor: const AlwaysStoppedAnimation<Color>(AppTheme.accentColor),
                 ),
               ),
@@ -347,9 +347,9 @@ class _FocusScreenState extends State<FocusScreen> {
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 8),
-            Text(
+            const Text(
               '+${AppConstants.pointsPerFocusSession} punten',
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
                 color: AppTheme.accentColor,

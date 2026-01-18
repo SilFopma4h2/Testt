@@ -61,7 +61,7 @@ class _WoordenScreenState extends State<WoordenScreen> {
                         Icon(
                           Icons.translate_outlined,
                           size: 80,
-                          color: AppTheme.primaryColor.withOpacity(0.3),
+                          color: AppTheme.primaryColor.withValues(alpha: 0.3),
                         ),
                         const SizedBox(height: 16),
                         Text(
@@ -88,7 +88,7 @@ class _WoordenScreenState extends State<WoordenScreen> {
                           leading: Container(
                             padding: const EdgeInsets.all(12),
                             decoration: BoxDecoration(
-                              color: AppTheme.primaryColor.withOpacity(0.1),
+                              color: AppTheme.primaryColor.withValues(alpha: 0.1),
                               borderRadius: BorderRadius.circular(12),
                             ),
                             child: const Icon(
@@ -224,25 +224,25 @@ class _WoordenScreenState extends State<WoordenScreen> {
       context: context,
       builder: (context) => AlertDialog(
         title: const Text('Nieuw Woord Toevoegen'),
-        content: Column(
+        content: const Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             TextField(
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
                 labelText: 'Woord',
                 border: OutlineInputBorder(),
               ),
             ),
-            const SizedBox(height: 12),
+            SizedBox(height: 12),
             TextField(
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
                 labelText: 'Betekenis',
                 border: OutlineInputBorder(),
               ),
             ),
-            const SizedBox(height: 12),
+            SizedBox(height: 12),
             TextField(
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
                 labelText: 'Voorbeeldzin (optioneel)',
                 border: OutlineInputBorder(),
               ),

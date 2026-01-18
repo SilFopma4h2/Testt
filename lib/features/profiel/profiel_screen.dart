@@ -33,10 +33,10 @@ class _ProfielScreenState extends State<ProfielScreen> {
                 padding: const EdgeInsets.all(24),
                 child: Column(
                   children: [
-                    CircleAvatar(
+                    const CircleAvatar(
                       radius: 50,
                       backgroundColor: AppTheme.primaryColor,
-                      child: const Text(
+                      child: Text(
                         'JD',
                         style: TextStyle(
                           fontSize: 32,
@@ -204,7 +204,7 @@ class _ProfielScreenState extends State<ProfielScreen> {
         Container(
           padding: const EdgeInsets.all(12),
           decoration: BoxDecoration(
-            color: AppTheme.primaryColor.withOpacity(0.1),
+            color: AppTheme.primaryColor.withValues(alpha: 0.1),
             borderRadius: BorderRadius.circular(12),
           ),
           child: Icon(icon, color: AppTheme.primaryColor, size: 28),
@@ -269,7 +269,7 @@ class _ProfielScreenState extends State<ProfielScreen> {
           width: 60,
           height: 60,
           decoration: BoxDecoration(
-            color: AppTheme.accentColor.withOpacity(0.1),
+            color: AppTheme.accentColor.withValues(alpha: 0.1),
             borderRadius: BorderRadius.circular(12),
           ),
           child: Center(

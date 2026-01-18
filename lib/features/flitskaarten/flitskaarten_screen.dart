@@ -105,7 +105,7 @@ class _FlitskaartenScreenState extends State<FlitskaartenScreen> {
                     leading: Container(
                       padding: const EdgeInsets.all(12),
                       decoration: BoxDecoration(
-                        color: AppTheme.secondaryColor.withOpacity(0.1),
+                        color: AppTheme.secondaryColor.withValues(alpha: 0.1),
                         borderRadius: BorderRadius.circular(12),
                       ),
                       child: const Icon(
@@ -243,16 +243,16 @@ class _FlitskaartenScreenState extends State<FlitskaartenScreen> {
               onChanged: (value) {},
             ),
             const SizedBox(height: 12),
-            TextField(
-              decoration: const InputDecoration(
+            const TextField(
+              decoration: InputDecoration(
                 labelText: 'Voorkant',
                 border: OutlineInputBorder(),
               ),
               maxLines: 3,
             ),
             const SizedBox(height: 12),
-            TextField(
-              decoration: const InputDecoration(
+            const TextField(
+              decoration: InputDecoration(
                 labelText: 'Achterkant',
                 border: OutlineInputBorder(),
               ),
